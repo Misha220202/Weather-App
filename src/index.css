@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --margin-horizontal: 25%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: repeat(3, 5rem) auto;
+    min-height: 100vh;
+    background-color: rgb(46, 91, 214);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.settings,
+.dateSwitch,
+.time,
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 var(--margin-horizontal);
+}
+
+.settings {
+    justify-content: flex-end;
+}
+
+.settings img {
+    height: 4rem;
+}
+
+.settings img:hover {
+    cursor: pointer;
+}
+
+.location {
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.location>input {
+    display: none;
+    width: 100%;
+    height: 2rem;
+    padding: 0 0.5rem;
+}
+
+.location>img {
+    margin-top: 1rem;
+}
+
+.cfSwitch>img {
+    margin-top: 0.3rem;
+}
+
+.dateSwitch>div{
+    display: flex;
+    width: 50%;
+    padding: 0.4rem;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+.dateSwitch>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 3rem;
+    color: black;
+    border-radius: 2rem;
+}
+
+.dateSwitch>div>div:hover {
+    cursor: pointer;
+}
+
+.dateSwitch>div>div.chosen {
+    background-color: grey;
+    color: white;
+}
+
+footer {
+    position: absolute;
+    bottom: 0.2rem;
+    text-align: center;
+    width: 100%;
+    font: normal 1rem sans-serif;
+}
