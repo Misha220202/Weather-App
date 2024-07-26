@@ -14,7 +14,7 @@ body {
     display: grid;
     grid-template-rows: repeat(3, 5rem) auto;
     min-height: 100vh;
-    background-color: rgb(46, 91, 214);
+    background: linear-gradient(to bottom, #87CEEB, #0000c6);
     color: white;
     font-size: 1.5rem;
 }
@@ -60,13 +60,13 @@ body {
     margin-top: 1rem;
 }
 
-.cfSwitch>img {
+.unitSwitch>img {
     margin-top: 0.3rem;
 }
 
-.dateSwitch>div{
+.dateSwitch>div {
     display: flex;
-    width: 50%;
+    min-width: 30rem;
     padding: 0.4rem;
     border-radius: 2rem;
     background-color: white;
@@ -91,9 +91,62 @@ body {
     color: white;
 }
 
+.now {
+    display: grid;
+    grid-template-rows: 1fr 1fr auto;
+    place-content: center;
+}
+
+.now>div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.currentConditions>div>* {
+    height: 4.5rem;
+}
+
+.currentConditions>div {
+    display: grid;
+    place-items: center;
+    height: 8rem;
+}
+
+.detailedConditions {
+    margin-left: -3rem;
+}
+
+.detailedConditions>div {
+    display: flex;
+    align-items: center;
+}
+
+.detailedConditions img {
+    width: 6rem;
+}
+
+.hourlyWeather>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+.hourlyWeather span {
+    width: 9rem;
+}
+
+th,
+td {
+    height: 4rem;
+    width: 10rem;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
 footer {
-    position: absolute;
-    bottom: 0.2rem;
+    margin: 2rem 0 0.5rem 0;
     text-align: center;
     width: 100%;
     font: normal 1rem sans-serif;

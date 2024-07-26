@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherApp</title>
 </head>
+
 <body>
     <div class="settings">
         <div class="location">
@@ -12,8 +14,8 @@
             <p id="result"></p>
             <img src="./assets/images/search.svg" alt="search">
         </div>
-        <div class="cfSwitch">
-            <img src="./assets/images/celsius.svg" alt="celsius">
+        <div class="unitSwitch" value="celsius">
+            <img src="./assets/images/celsius.svg" alt="unit">
         </div>
     </div>
     <div class="dateSwitch" value="now">
@@ -23,19 +25,8 @@
         </div>
     </div>
     <div class="time"></div>
-    <div class="container">
-        <div class="currentConditions">
-            <div class="tempreture"></div>
-            <div class="condition"></div>
-        </div>
-        <div class="detailedConditions">
-            <div class="feelsLike"></div>
-            <div class="humidity"></div>
-            <div class="chanceOfRain"></div>
-            <div class="windSpeed"></div>
-        </div>
-        <div class="24HoursWeather"></div>
-    </div>
+    <div class="container"></div>
     <footer>Copyright@2024 MISHA</footer>
 </body>
+
 </html>
