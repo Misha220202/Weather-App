@@ -100,7 +100,6 @@ body {
 .now>div {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .currentConditions>div>* {
@@ -126,6 +125,11 @@ body {
     width: 6rem;
 }
 
+.hourlyWeather {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
 .hourlyWeather>div {
     display: flex;
     justify-content: space-between;
@@ -134,7 +138,7 @@ body {
 }
 
 .hourlyWeather span {
-    width: 9rem;
+    width: 8.5rem;
 }
 
 th,
@@ -146,8 +150,10 @@ td {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
     margin: 2rem 0 0.5rem 0;
-    text-align: center;
     width: 100%;
     font: normal 1rem sans-serif;
 }
