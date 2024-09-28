@@ -1,5 +1,7 @@
 # Weather App
 
+## Overview
+
 This is a weather forecast application that displays current weather conditions and a 7-day forecast for a specified location. The application fetches data from the Visual Crossing Weather API and presents it in a user-friendly format.
 
 ## Features
