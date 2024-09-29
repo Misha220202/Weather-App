@@ -37,7 +37,6 @@ This file handles data fetching and updating the UI:
 
 - **`updateWeatherForecast(data)`**:
   - Clears existing weather data from the UI and updates it with the new forecast based on the current date.
-
 ### `index.js`
 
 The entry point of the application:
